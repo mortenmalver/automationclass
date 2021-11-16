@@ -2,9 +2,9 @@
 - hosts: localhost
   connection: local
   vars:
-    user: write your username here
+    user: mm
   tasks:
-  - name: Create resource group
+  - name: ansible-mm
     azure_rm_resourcegroup:
       name: "webserver_{{ user }}"
       location: northeurope
